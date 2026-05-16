@@ -74,14 +74,13 @@ export function PhotoCard() {
               mobilePage === 0 ? "is-mobile-active" : ""
             }`}
           >
-            <span className="page-number">01</span>
             <div className="book-photo">
               <img src={myPhoto} alt="Ankita Shendge" />
             </div>
             <div className="book-cover-copy">
               <p className="photo-label">Portfolio</p>
               <h3>Ankita Shendge</h3>
-              <span>Frontend Developer</span>
+              <span>Software Developer</span>
             </div>
           </section>
 
@@ -90,7 +89,6 @@ export function PhotoCard() {
               mobilePage === 1 ? "is-mobile-active" : ""
             }`}
           >
-            <span className="page-number">02</span>
             <p className="photo-label">About me</p>
             <h2>Building polished, accessible frontend experiences.</h2>
             <p>
@@ -122,11 +120,10 @@ export function PhotoCard() {
               mobilePage === 2 ? "is-mobile-active" : ""
             }`}
           >
-            <span className="page-number">03</span>
             <p className="photo-label">Highlights</p>
             <div className="hero-metrics">
               <div>
-                <strong>8+</strong>
+                <strong>4+</strong>
                 <span>Years front-end</span>
               </div>
               <div>
@@ -145,7 +142,7 @@ export function PhotoCard() {
                   Build React & Vue.js applications with modern architecture
                 </li>
                 <li>Implement responsive, accessible user interfaces</li>
-                <li>Integrate APIs and manage complex state</li>
+                <li>Turning complex problems into intuitive solutions</li>
               </ul>
             </div>
           </section>
@@ -155,7 +152,6 @@ export function PhotoCard() {
               mobilePage === 3 ? "is-mobile-active" : ""
             }`}
           >
-            <span className="page-number">04</span>
             <p className="photo-label">Contact</p>
             <h2>Let us connect.</h2>
             <div className="contact-info">
@@ -199,11 +195,6 @@ export function PhotoCard() {
               </div>
             </div>
           </section>
-        </div>
-        <div className="book-bottom-lines" aria-hidden="true">
-          <span />
-          <span />
-          <span />
         </div>
       </div>
 

@@ -533,6 +533,7 @@ body {
   background: linear-gradient(135deg, #111827 0%, #0f172a 100%);
   box-shadow:
     0 0 0 1px rgba(148, 163, 184, 0.12),
+    0 0 42px rgba(56, 189, 248, 0.1),
     0 26px 70px rgba(2, 6, 23, 0.26);
 }
 
@@ -557,52 +558,6 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.14);
   border-radius: 22px 22px 12px 12px;
   pointer-events: none;
-}
-
-.book-bottom-lines {
-  position: absolute;
-  right: 9%;
-  bottom: 1rem;
-  left: 9%;
-  z-index: 7;
-  height: 44px;
-  pointer-events: none;
-}
-
-.book-bottom-lines::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 86px;
-  height: 22px;
-  border-radius: 0 0 999px 999px;
-  background: rgba(2, 6, 23, 0.72);
-  box-shadow: 0 -10px 24px rgba(2, 6, 23, 0.42);
-  transform: translateX(-50%);
-}
-
-.book-bottom-lines span {
-  position: absolute;
-  right: 0;
-  left: 0;
-  border-bottom: 2px solid rgba(148, 163, 184, 0.32);
-  border-radius: 0 0 50% 50%;
-}
-
-.book-bottom-lines span:nth-child(1) {
-  bottom: 8px;
-  transform: scaleX(0.9);
-}
-
-.book-bottom-lines span:nth-child(2) {
-  bottom: 17px;
-  transform: scaleX(0.78);
-}
-
-.book-bottom-lines span:nth-child(3) {
-  bottom: 26px;
-  transform: scaleX(0.64);
 }
 
 .book-spread {
@@ -645,6 +600,7 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.16);
   border-radius: 24px;
   background:
+    radial-gradient(circle at top right, var(--book-page-glow, rgba(56, 189, 248, 0.14)), transparent 38%),
     repeating-linear-gradient(
       0deg,
       rgba(5, 5, 5, 0.035) 0,
@@ -653,7 +609,7 @@ body {
       transparent 18px
     ),
     linear-gradient(90deg, rgba(5, 5, 5, 0.08), transparent 20%),
-    linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    linear-gradient(135deg, var(--book-page-start, #111827) 0%, var(--book-page-end, #0f172a) 100%);
   box-shadow: 0 18px 34px rgba(2, 6, 23, 0.16);
   padding: clamp(1.75rem, 4vw, 3.5rem);
 }
@@ -685,25 +641,10 @@ body {
   pointer-events: none;
 }
 
-.page-number {
-  position: absolute;
-  bottom: 1.1rem;
-  color: rgba(226, 232, 240, 0.58);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  pointer-events: none;
-}
-
-.book-left .page-number {
-  left: clamp(1.5rem, 4vw, 3rem);
-}
-
-.book-right .page-number {
-  right: clamp(1.5rem, 4vw, 3rem);
-}
-
 .book-cover {
+  --book-page-glow: rgba(56, 189, 248, 0.16);
+  --book-page-start: #12233d;
+  --book-page-end: #0f172a;
   grid-template-rows: minmax(0, 1fr);
   align-content: stretch;
   padding: 1rem;
@@ -715,10 +656,14 @@ body {
       transparent 1px,
       transparent 18px
     ),
-    linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    radial-gradient(circle at top right, var(--book-page-glow), transparent 38%),
+    linear-gradient(135deg, var(--book-page-start) 0%, var(--book-page-end) 100%);
 }
 
 .book-about {
+  --book-page-glow: rgba(52, 211, 153, 0.14);
+  --book-page-start: #102c2f;
+  --book-page-end: #0f172a;
   background:
     repeating-linear-gradient(
       0deg,
@@ -727,10 +672,14 @@ body {
       transparent 1px,
       transparent 18px
     ),
-    linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    radial-gradient(circle at top right, var(--book-page-glow), transparent 38%),
+    linear-gradient(135deg, var(--book-page-start) 0%, var(--book-page-end) 100%);
 }
 
 .book-work {
+  --book-page-glow: rgba(167, 139, 250, 0.15);
+  --book-page-start: #231a3d;
+  --book-page-end: #0f172a;
   background:
     repeating-linear-gradient(
       0deg,
@@ -739,10 +688,14 @@ body {
       transparent 1px,
       transparent 18px
     ),
-    linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    radial-gradient(circle at top right, var(--book-page-glow), transparent 38%),
+    linear-gradient(135deg, var(--book-page-start) 0%, var(--book-page-end) 100%);
 }
 
 .book-contact {
+  --book-page-glow: rgba(245, 158, 11, 0.13);
+  --book-page-start: #2f2413;
+  --book-page-end: #0f172a;
   background:
     repeating-linear-gradient(
       0deg,
@@ -751,7 +704,8 @@ body {
       transparent 1px,
       transparent 18px
     ),
-    linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    radial-gradient(circle at top right, var(--book-page-glow), transparent 38%),
+    linear-gradient(135deg, var(--book-page-start) 0%, var(--book-page-end) 100%);
 }
 
 .book-left {
@@ -766,6 +720,7 @@ body {
   border-radius: 0 24px 24px 0;
   border-left-color: rgba(2, 6, 23, 0.82);
   background:
+    radial-gradient(circle at top right, var(--book-page-glow, rgba(56, 189, 248, 0.14)), transparent 38%),
     repeating-linear-gradient(
       0deg,
       rgba(5, 5, 5, 0.035) 0,
@@ -774,7 +729,7 @@ body {
       transparent 18px
     ),
     linear-gradient(270deg, rgba(5, 5, 5, 0.08), transparent 18%),
-    linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    linear-gradient(135deg, var(--book-page-start, #111827) 0%, var(--book-page-end, #0f172a) 100%);
   box-shadow:
     inset 16px 0 22px rgba(5, 5, 5, 0.16),
     0 18px 34px rgba(2, 6, 23, 0.14);
@@ -883,14 +838,14 @@ body {
 
 .page-corner {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 68px;
-  height: 68px;
+  right: 1rem;
+  top: 1rem;
+  width: 48px;
+  height: 48px;
   overflow: hidden;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+  border: 2px solid rgba(248, 250, 252, 0.82);
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.28);
   color: #f8fafc;
   font-size: 0;
   cursor: pointer;
@@ -900,33 +855,16 @@ body {
 }
 
 .page-corner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      135deg,
-      transparent 0 50%,
-      rgba(226, 232, 240, 0.2) 51%,
-      rgba(226, 232, 240, 0.36) 100%
-    );
-  border-left: 1px solid rgba(226, 232, 240, 0.3);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.3);
-  box-shadow: -8px 8px 18px rgba(2, 6, 23, 0.22);
-}
-
-.page-corner::after {
   content: ">";
-  position: absolute;
-  right: 0.85rem;
-  top: 0.65rem;
-  color: rgba(248, 250, 252, 0.9);
-  font-size: 1rem;
-  font-weight: 900;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  font-weight: 700;
 }
 
 .page-corner:hover {
-  transform: translate(2px, -2px);
+  background: rgba(248, 250, 252, 0.18);
+  transform: translateX(2px);
 }
 
 .page-corner:disabled {
@@ -1029,10 +967,6 @@ body {
   }
 
   .photo-book::before {
-    display: none;
-  }
-
-  .book-bottom-lines {
     display: none;
   }
 
