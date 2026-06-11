@@ -80,7 +80,7 @@ export function PhotoCard() {
             <div className="book-cover-copy">
               <p className="photo-label">Portfolio</p>
               <h3>Ankita Shendge</h3>
-              <span>Software Developer</span>
+              <span>Frontend Engineer</span>
             </div>
           </section>
 
@@ -90,12 +90,13 @@ export function PhotoCard() {
             }`}
           >
             <p className="photo-label">About me</p>
-            <h2>Building polished, accessible frontend experiences.</h2>
+            <h2>Creating frontend experiences that work for everyone.</h2>
             <p>
-              I am a frontend developer focused on React, Vue.js, responsive
-              UI, accessibility, and clean component architecture. I enjoy
-              turning product ideas into smooth, usable interfaces that feel
-              thoughtful on every screen.
+              I am a frontend engineer who turns complex product requirements
+              into responsive, accessible interfaces. I build with React,
+              Vue.js, Angular, Next.js, and TypeScript, with a focus on
+              reusable components, WCAG accessibility, performance, and
+              reliable API integrations.
             </p>
             <button
               className="page-corner"
@@ -124,25 +125,23 @@ export function PhotoCard() {
             <div className="hero-metrics">
               <div>
                 <strong>4+</strong>
-                <span>Years front-end</span>
+                <span>Years in software</span>
               </div>
               <div>
-                <strong>15+</strong>
-                <span>Projects shipped</span>
+                <strong>50+</strong>
+                <span>API test cases</span>
               </div>
               <div>
-                <strong>100%</strong>
-                <span>Accessible UI</span>
+                <strong>20</strong>
+                <span>Students supported</span>
               </div>
             </div>
             <div className="hero-highlights">
               <h2>What I do</h2>
               <ul>
-                <li>
-                  Build React & Vue.js applications with modern architecture
-                </li>
-                <li>Implement responsive, accessible user interfaces</li>
-                <li>Turning complex problems into intuitive solutions</li>
+                <li>Build scalable, reusable frontend systems</li>
+                <li>Improve WCAG accessibility and web performance</li>
+                <li>Integrate APIs, authentication, and automated tests</li>
               </ul>
             </div>
           </section>
@@ -153,11 +152,11 @@ export function PhotoCard() {
             }`}
           >
             <p className="photo-label">Contact</p>
-            <h2>Let us connect.</h2>
+            <h2>Let&apos;s build something useful.</h2>
             <div className="contact-info">
               <div className="contact-item">
                 <span className="contact-label">Location:</span>
-                <span>Fremont, CA</span>
+                <span>Sunnyvale, CA</span>
               </div>
               <div className="contact-item">
                 <span className="contact-label">Email:</span>
@@ -191,6 +190,19 @@ export function PhotoCard() {
                   }
                 >
                   GitHub
+                </a>
+                <a
+                  href="/Ankita_Shendge_Resume.pdf"
+                  download="Ankita_Shendge_Resume.pdf"
+                  className="contact-link"
+                  tabIndex={
+                    (isSmallWindow && mobilePage === 3) ||
+                    (!isSmallWindow && spread === 1)
+                      ? 0
+                      : -1
+                  }
+                >
+                  Download Resume
                 </a>
               </div>
             </div>

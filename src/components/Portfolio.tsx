@@ -16,36 +16,44 @@ export default function Portfolio() {
       <SectionTitle
         id="experience"
         title="Experience"
-        description="Professional background and technical expertise."
+        description="How I have contributed across product development, support, and education."
       />
       <section className="experience-section">
         <div className="experience-item">
           <h3>Frontend Engineer, Audemy.org (US)</h3>
           <p className="experience-date">Feb 2025 - Present</p>
           <ul>
-            <li>Responsible for developing Accessibility Studio page</li>
             <li>
-              Worked on improving app performance, finding issues and fixing
-              them
+              Developed the Accessibility Studio and analytics dashboards to
+              improve accessibility management and provide insights into
+              student progress and game performance
             </li>
             <li>
-              Designed and developed a portal to visualize student progress,
-              game statistics, and information, with supporting API development
-              for seamless data integration
+              Built responsive Vue.js components and integrated REST APIs to
+              support student and educator workflows
+            </li>
+            <li>
+              Improved WCAG compliance and application performance through code
+              splitting, lazy loading, and component-level enhancements
             </li>
           </ul>
         </div>
         <div className="experience-item">
-          <h3>Internship - Web Developer, Seven Mentors (US)</h3>
+          <h3>Web Developer Intern, Seven Mentors (US)</h3>
           <p className="experience-date">Jun 2024 - Aug 2024</p>
           <ul>
-            <li>Responsible for building features for the Homescreen</li>
             <li>
-              Developed and designed base components(classes) for the project
-              restaurant website
+              Developed responsive React components from Figma designs for a
+              restaurant web application
             </li>
             <li>
-              Worked on improving app load times and adding smooth animations
+              Built reusable UI components and integrated dynamic content using
+              Redux and Context API
+            </li>
+            <li>
+              Improved performance, accessibility, and cross-device
+              compatibility while participating in code reviews, testing, and
+              Agile sprint ceremonies
             </li>
           </ul>
         </div>
@@ -54,12 +62,12 @@ export default function Portfolio() {
           <p className="experience-date">Jan 2024 - Mar 2024</p>
           <ul>
             <li>
-              Helped professor in constructing Frontend project problem
+              Helped the professor construct frontend project problem
               statements
             </li>
             <li>
-              Held weekly office hours to address concerns and questions of a
-              class of 20 students
+              Led weekly office hours, helping a class of 20 students solve
+              technical problems and strengthen frontend fundamentals
             </li>
           </ul>
         </div>
@@ -68,29 +76,54 @@ export default function Portfolio() {
           <p className="experience-date">Aug 2018 - Mar 2021</p>
           <ul>
             <li>
-              Data extraction, aggregation, and reporting processes in a banking
-              system to support business insights
+              Developed SQL queries and reporting solutions for data
+              extraction, aggregation, and business intelligence in banking
+              systems
             </li>
             <li>
-              Monitored and improved page load times using AppDynamics,
-              enhancing transaction performance
+              Used AppDynamics to identify bottlenecks and improve page-load and
+              transaction performance
             </li>
             <li>
-              Resolved L2/L3 issues for 30+ HCL Notes applications, ensuring SLA
-              adherence, workflow optimization
+              Resolved L2/L3 issues across 30+ HCL Notes applications while
+              meeting SLAs and improving workflows
             </li>
             <li>
-              Designed internal portals for transaction cost metrics leveraging
-              React.js, HTML, and CSS for responsiveness
+              Built responsive React portals that helped teams monitor
+              transaction-cost metrics
             </li>
             <li>
-              Secured authentication flows and improved reliability through
-              Postman-based testing (50+ cases across 20 APIs) and Logging
+              Strengthened authentication and reliability by executing 50+ test
+              cases across 20 APIs with Postman
             </li>
             <li>
-              Handled 24/7 on-call incident management as escalation point,
-              minimizing downtime for critical systems
+              Served as an escalation point for 24/7 incident response,
+              minimizing disruption to critical systems
             </li>
+          </ul>
+        </div>
+      </section>
+
+      <SectionTitle
+        id="education"
+        title="Education"
+        description="Academic foundations in information technology and computer engineering."
+      />
+      <section className="experience-section">
+        <div className="experience-item">
+          <h3>Master of Science, Information Technology</h3>
+          <p className="experience-date">
+            University of Denver | Aug 2024
+          </p>
+          <ul>
+            <li>Graduated with a 4.0/4.0 GPA</li>
+          </ul>
+        </div>
+        <div className="experience-item">
+          <h3>Bachelor of Engineering, Computer Engineering</h3>
+          <p className="experience-date">Pune University | May 2014</p>
+          <ul>
+            <li>Graduated with 75%</li>
           </ul>
         </div>
       </section>
@@ -98,7 +131,7 @@ export default function Portfolio() {
       <SectionTitle
         id="skills"
         title="Skills"
-        description="Key frontend strengths and tools."
+        description="The technologies and practices I use to build dependable user experiences."
       />
       <section className="skill-grid">
         {skills.map((skill) => (
@@ -109,7 +142,7 @@ export default function Portfolio() {
       <SectionTitle
         id="projects"
         title="Featured Projects"
-        description="Example work to showcase the frontend portfolio."
+        description="Selected work across accessibility, responsive web applications, and cross-platform development."
       />
       <section className="projects-grid">
         {projects.map((project) => (
