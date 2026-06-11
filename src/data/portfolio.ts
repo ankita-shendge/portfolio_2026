@@ -14,59 +14,44 @@ export type Skill = {
 
 export const skills: Skill[] = [
   {
-    name: 'Frontend Frameworks',
+    name: 'Frontend',
     level: 'Expert',
-    description: 'React, Angular, Vue.js, Next.js, TypeScript, JavaScript, React Hooks, and React Router.',
+    description: 'React.js, Angular, Vue.js, Next.js, TypeScript, JavaScript (ES6+), React Hooks, React Router, HTML5, CSS3, SCSS, Tailwind CSS, Bootstrap, Redux, Context API, Responsive Design, Cross-Browser Compatibility, Accessibility (WCAG).',
   },
   {
-    name: 'UI Engineering',
-    level: 'Expert',
-    description: 'HTML5, CSS3, SCSS, Tailwind CSS, Bootstrap, responsive design, and cross-browser compatibility.',
-  },
-  {
-    name: 'Accessibility',
-    level: 'Expert',
-    description: 'WCAG standards, semantic markup, accessible interactions, and inclusive interface development.',
-  },
-  {
-    name: 'State Management',
+    name: 'Design & Prototyping',
     level: 'Advanced',
-    description: 'Redux and Context API for predictable shared state and scalable application architecture.',
+    description: 'Figma, Storybook.',
   },
   {
     name: 'Backend & APIs',
     level: 'Advanced',
-    description: 'Node.js, Express.js, RESTful APIs, JSON, Axios, Fetch API, OAuth 2.0, JWT, and RBAC.',
+    description: 'Node.js, Express.js, RESTful APIs, JSON, Axios, Fetch API, OAuth 2.0, JWT Authentication.',
   },
   {
     name: 'Databases',
     level: 'Advanced',
-    description: 'PostgreSQL, SQL, Prisma ORM, reporting workflows, and data aggregation.',
+    description: 'PostgreSQL, SQL, Prisma ORM.',
   },
   {
-    name: 'Testing & Performance',
+    name: 'AI & Developer Tools',
     level: 'Advanced',
-    description: 'Jest, React Testing Library, Cypress, WebPageTest, AppDynamics, lazy loading, and code splitting.',
-  },
-  {
-    name: 'Design Systems',
-    level: 'Advanced',
-    description: 'Reusable component libraries, Storybook, Figma, design handoff, and prototyping.',
-  },
-  {
-    name: 'Build & Delivery',
-    level: 'Advanced',
-    description: 'Vite, Webpack, npm, Yarn, Git, GitHub, CI/CD, Postman, Jira, code reviews, and Agile delivery.',
+    description: 'ChatGPT, GitHub Copilot, Cursor AI, Claude AI, Gemini AI.',
   },
   {
     name: 'Deployment & Hosting',
     level: 'Advanced',
-    description: 'Vercel, Netlify, Firebase Hosting, and GitHub Pages.',
+    description: 'Vercel, Netlify, Firebase Hosting, GitHub Pages.',
   },
   {
-    name: 'AI Tooling',
+    name: 'Build & Tooling',
     level: 'Advanced',
-    description: 'ChatGPT, GitHub Copilot, Codex, Cursor AI, Claude AI, and Gemini AI for development and review.',
+    description: 'Vite, Webpack, npm, Yarn, Git, GitHub, CI/CD, Postman, Jira.',
+  },
+  {
+    name: 'Testing & Performance',
+    level: 'Advanced',
+    description: 'Jest, React Testing Library, Cypress, WebPageTest, AppDynamics.',
   },
 ];
 

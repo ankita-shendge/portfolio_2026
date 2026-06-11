@@ -1,17 +1,17 @@
 import { ProjectCard } from "./ProjectCard";
 import { SectionTitle } from "./SectionTitle";
-import { SkillPill } from "./SkillPill";
-import { PhotoCard } from "./PhotoCard";
-import { projects, skills } from "../data/portfolio";
+import { DevSkills3D } from "./DevSkills3D";
+import { Hero3D } from "./Hero3D";
+import { projects } from "../data/portfolio";
 
 export default function Portfolio() {
   return (
     <div className="portfolio-shell">
       <section className="hero-section">
-   
-          <PhotoCard />
-    
+        <Hero3D />
       </section>
+
+      <DevSkills3D />
 
       <SectionTitle
         id="experience"
@@ -102,41 +102,6 @@ export default function Portfolio() {
             </li>
           </ul>
         </div>
-      </section>
-
-      <SectionTitle
-        id="education"
-        title="Education"
-        description="Academic foundations in information technology and computer engineering."
-      />
-      <section className="experience-section">
-        <div className="experience-item">
-          <h3>Master of Science, Information Technology</h3>
-          <p className="experience-date">
-            University of Denver | Aug 2024
-          </p>
-          <ul>
-            <li>Graduated with a 4.0/4.0 GPA</li>
-          </ul>
-        </div>
-        <div className="experience-item">
-          <h3>Bachelor of Engineering, Computer Engineering</h3>
-          <p className="experience-date">Pune University | May 2014</p>
-          <ul>
-            <li>Graduated with 75%</li>
-          </ul>
-        </div>
-      </section>
-
-      <SectionTitle
-        id="skills"
-        title="Skills"
-        description="The technologies and practices I use to build dependable user experiences."
-      />
-      <section className="skill-grid">
-        {skills.map((skill) => (
-          <SkillPill key={skill.name} skill={skill} />
-        ))}
       </section>
 
       <SectionTitle
