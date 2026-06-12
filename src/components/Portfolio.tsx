@@ -1,8 +1,7 @@
-import { ProjectCard } from "./ProjectCard";
 import { SectionTitle } from "./SectionTitle";
 import { DevSkills3D } from "./DevSkills3D";
 import { Hero3D } from "./Hero3D";
-import { projects } from "../data/portfolio";
+import { ProjectConstellation } from "./ProjectConstellation";
 
 export default function Portfolio() {
   return (
@@ -109,11 +108,7 @@ export default function Portfolio() {
         title="Featured Projects"
         description="Selected work across accessibility, responsive web applications, and cross-platform development."
       />
-      <section className="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </section>
+      <ProjectConstellation />
     </div>
   );
 }

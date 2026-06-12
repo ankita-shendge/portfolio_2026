@@ -107,7 +107,7 @@ export function Hero3D() {
             <span>Design • Build • Test • Ship</span>
           </div>
         </div>
-
+{/*
         <div className="hero-tech-card hero-tech-react">
           <span>01</span>
           <strong>React + Angular + Vue</strong>
@@ -119,7 +119,7 @@ export function Hero3D() {
         <div className="hero-tech-card hero-tech-api">
           <span>03</span>
           <strong>REST APIs + Testing</strong>
-        </div>
+        </div> */}
       </div>
     </section>
   );
