@@ -2230,32 +2230,73 @@ body {
   }
 
   .dev-skills-3d {
-    gap: 0.75rem;
-    padding: 0.9rem;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: visible;
     border-radius: 24px;
   }
 
   .dev-skills-copy h2 {
+    max-width: none;
     font-size: clamp(2.2rem, 12vw, 3.2rem);
   }
 
   .skill-layer-controls {
-    display: flex;
-    margin-inline: -0.9rem;
-    padding-inline: 0.9rem;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scroll-snap-type: x proximity;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+    margin-top: 0.9rem;
   }
 
   .skill-layer-controls button {
-    flex: 0 0 160px;
-    scroll-snap-align: start;
+    min-width: 0;
+    padding: 0.65rem;
+    transform: none;
+  }
+
+  .skill-layer-controls button:hover,
+  .skill-layer-controls button:focus-visible,
+  .skill-layer-controls button.is-active {
+    transform: none;
+  }
+
+  .skill-layer-controls strong {
+    overflow-wrap: anywhere;
   }
 
   .skill-scene {
-    min-height: 360px;
-    margin-inline: -0.5rem;
+    min-height: 0;
+    perspective: none;
+  }
+
+  .skill-scene::before,
+  .skill-scene::after,
+  .skill-scene-glow {
+    display: none;
+  }
+
+  .skill-detail-panel {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    min-height: 0;
+    padding: 1rem;
+    border-radius: 18px;
+    transform: none;
+  }
+
+  .skill-detail-panel h3 {
+    font-size: clamp(1.65rem, 8vw, 2.25rem);
+  }
+
+  .skill-detail-tags {
+    gap: 0.35rem;
+  }
+
+  .skill-detail-tags span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .project-constellation {
@@ -2474,5 +2515,9 @@ body {
   .book-dots button {
     width: 0.55rem;
     height: 0.55rem;
+  }
+
+  .skill-layer-controls {
+    grid-template-columns: 1fr;
   }
 }
