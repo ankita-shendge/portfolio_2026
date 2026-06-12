@@ -19,7 +19,7 @@ export function Hero3D() {
   return (
     <section className="hero-3d" aria-labelledby="hero-title">
       <div className="hero-3d-copy">
-        <p className="eyebrow">Frontend engineer • Sunnyvale, CA</p>
+        <p className="eyebrow">Softwear Developer • Sunnyvale, CA</p>
         <h1 id="hero-title">
           Building digital experiences with <span>depth.</span>
         </h1>
@@ -103,11 +103,10 @@ export function Hero3D() {
           </div>
           <div className="hero-profile-copy">
             <p>ANKITA.SHENDGE</p>
-            <strong>Frontend Engineer</strong>
             <span>Design • Build • Test • Ship</span>
           </div>
         </div>
-{/*
+        {/*
         <div className="hero-tech-card hero-tech-react">
           <span>01</span>
           <strong>React + Angular + Vue</strong>
